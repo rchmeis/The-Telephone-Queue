@@ -11,11 +11,11 @@ namespace The_Telephone_Queue
         private string _need;
         private DateTime _contactTime;
 
-        public Patient(string name, string need, DateTime contactTime)
+        public Patient(string name, string need)
         {
             Name = name;
             Need = need;
-            ContactTime = contactTime;
+            ContactTime = DateTime.Now;
         }
 
         public string Name
